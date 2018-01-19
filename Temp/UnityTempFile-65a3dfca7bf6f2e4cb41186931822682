@@ -1,0 +1,314 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-unsafe
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+-r:Assets/Plugins/Photon3Unity3D.dll
+-r:Assets/Plugins/WebSocket/websocket-sharp.dll
+-r:"Assets/TextMesh Pro/Plugins/TextMeshPro-1.0.55.2017.1.0b12.dll"
+-r:Assets/UnityAds/UnityEngine.Advertisements.Editor.dll
+-r:C:/Users/janek/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@1.0.1/UnityEngine.Analytics.dll
+-r:C:/Users/janek/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@1.0.1/UnityEngine.Purchasing.dll
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_2_OR_NEWER
+-define:UNITY_2017_2_1
+-define:UNITY_2017_2
+-define:UNITY_2017
+-define:PLATFORM_ARCH_64
+-define:UNITY_64
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_GENERICS
+-define:ENABLE_PVR_GI
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_GRID
+-define:ENABLE_TILEMAP
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_DIRECTOR
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_HUB
+-define:ENABLE_EDITOR_HUB_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_TIMELINE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_NATIVE_ARRAY
+-define:ENABLE_SPRITE_MASKING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:ENABLE_MONO_BDWGC
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_VIDEO
+-define:ENABLE_RMGUI
+-define:ENABLE_PACKMAN
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_STYLE_SHEETS
+-define:PLATFORM_STANDALONE_WIN
+-define:PLATFORM_STANDALONE
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_VR
+-define:ENABLE_AR
+-define:ENABLE_SPATIALTRACKING
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:NET_2_0_SUBSET
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_NATIVE_ARRAY_CHECKS
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+Assets/Code/ActivityCam.cs
+Assets/Code/BulletHole.cs
+Assets/Code/ClassChoserOp.cs
+Assets/Code/HitBox.cs
+Assets/Code/HouseBuilder.cs
+Assets/Code/IngameUI.cs
+Assets/Code/Manager.cs
+Assets/Code/OperatorConst.cs
+Assets/Code/Player.cs
+Assets/Code/WeaponConst.cs
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/CustomTypes.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Enums.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Extensions.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/FriendInfo.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/GizmoType.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/LoadbalancingPeer.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonClasses.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonHandler.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonLagSimulationGui.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonPlayer.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonStatsGui.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonStreamQueue.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonView.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/PingCloudRegions.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Room.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/RoomInfo.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/RPC.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/ServerSettings.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/SocketUdp.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/SocketWebTcp.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonAnimatorView.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonRigidbody2DView.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonRigidbodyView.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformView.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewPositionControl.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewPositionModel.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewRotationControl.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewRotationModel.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewScaleControl.cs"
+"Assets/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewScaleModel.cs"
+"Assets/Photon Unity Networking/UtilityScripts/ConnectAndJoinRandom.cs"
+"Assets/Photon Unity Networking/UtilityScripts/CullArea.cs"
+"Assets/Photon Unity Networking/UtilityScripts/InputToEvent.cs"
+"Assets/Photon Unity Networking/UtilityScripts/InRoomChat.cs"
+"Assets/Photon Unity Networking/UtilityScripts/ManualPhotonViewAllocator.cs"
+"Assets/Photon Unity Networking/UtilityScripts/MoveByKeys.cs"
+"Assets/Photon Unity Networking/UtilityScripts/NetworkCullingHandler.cs"
+"Assets/Photon Unity Networking/UtilityScripts/OnClickDestroy.cs"
+"Assets/Photon Unity Networking/UtilityScripts/OnClickInstantiate.cs"
+"Assets/Photon Unity Networking/UtilityScripts/OnJoinedInstantiate.cs"
+"Assets/Photon Unity Networking/UtilityScripts/OnStartDelete.cs"
+"Assets/Photon Unity Networking/UtilityScripts/PhotonPlayer/PlayerRoomIndexing.cs"
+"Assets/Photon Unity Networking/UtilityScripts/PickupItem.cs"
+"Assets/Photon Unity Networking/UtilityScripts/PickupItemSimple.cs"
+"Assets/Photon Unity Networking/UtilityScripts/PickupItemSyncer.cs"
+"Assets/Photon Unity Networking/UtilityScripts/PointedAtGameObjectInfo.cs"
+"Assets/Photon Unity Networking/UtilityScripts/PunPlayerScores.cs"
+"Assets/Photon Unity Networking/UtilityScripts/PunTeams.cs"
+"Assets/Photon Unity Networking/UtilityScripts/PunTurnManager.cs"
+"Assets/Photon Unity Networking/UtilityScripts/QuitOnEscapeOrBack.cs"
+"Assets/Photon Unity Networking/UtilityScripts/ShowStatusWhenConnecting.cs"
+"Assets/Photon Unity Networking/UtilityScripts/SmoothSyncMovement.cs"
+"Assets/Photon Unity Networking/UtilityScripts/SupportLogger.cs"
+"Assets/Photon Unity Networking/UtilityScripts/TimeKeeper.cs"
+"Assets/Photon Unity Networking/UtilityScripts/UI/ButtonInsideScrollList.cs"
+"Assets/Photon Unity Networking/UtilityScripts/UI/TextButtonTransition.cs"
+"Assets/Photon Unity Networking/UtilityScripts/UI/TextToggleIsOnTransition.cs"
+Assets/PostProcessing/Runtime/Attributes/GetSetAttribute.cs
+Assets/PostProcessing/Runtime/Attributes/MinAttribute.cs
+Assets/PostProcessing/Runtime/Attributes/TrackballAttribute.cs
+Assets/PostProcessing/Runtime/Attributes/TrackballGroupAttribute.cs
+Assets/PostProcessing/Runtime/Components/AmbientOcclusionComponent.cs
+Assets/PostProcessing/Runtime/Components/BloomComponent.cs
+Assets/PostProcessing/Runtime/Components/BuiltinDebugViewsComponent.cs
+Assets/PostProcessing/Runtime/Components/ChromaticAberrationComponent.cs
+Assets/PostProcessing/Runtime/Components/ColorGradingComponent.cs
+Assets/PostProcessing/Runtime/Components/DepthOfFieldComponent.cs
+Assets/PostProcessing/Runtime/Components/DitheringComponent.cs
+Assets/PostProcessing/Runtime/Components/EyeAdaptationComponent.cs
+Assets/PostProcessing/Runtime/Components/FogComponent.cs
+Assets/PostProcessing/Runtime/Components/FxaaComponent.cs
+Assets/PostProcessing/Runtime/Components/GrainComponent.cs
+Assets/PostProcessing/Runtime/Components/MotionBlurComponent.cs
+Assets/PostProcessing/Runtime/Components/ScreenSpaceReflectionComponent.cs
+Assets/PostProcessing/Runtime/Components/TaaComponent.cs
+Assets/PostProcessing/Runtime/Components/UserLutComponent.cs
+Assets/PostProcessing/Runtime/Components/VignetteComponent.cs
+Assets/PostProcessing/Runtime/Models/AmbientOcclusionModel.cs
+Assets/PostProcessing/Runtime/Models/AntialiasingModel.cs
+Assets/PostProcessing/Runtime/Models/BloomModel.cs
+Assets/PostProcessing/Runtime/Models/BuiltinDebugViewsModel.cs
+Assets/PostProcessing/Runtime/Models/ChromaticAberrationModel.cs
+Assets/PostProcessing/Runtime/Models/ColorGradingModel.cs
+Assets/PostProcessing/Runtime/Models/DepthOfFieldModel.cs
+Assets/PostProcessing/Runtime/Models/DitheringModel.cs
+Assets/PostProcessing/Runtime/Models/EyeAdaptationModel.cs
+Assets/PostProcessing/Runtime/Models/FogModel.cs
+Assets/PostProcessing/Runtime/Models/GrainModel.cs
+Assets/PostProcessing/Runtime/Models/MotionBlurModel.cs
+Assets/PostProcessing/Runtime/Models/ScreenSpaceReflectionModel.cs
+Assets/PostProcessing/Runtime/Models/UserLutModel.cs
+Assets/PostProcessing/Runtime/Models/VignetteModel.cs
+Assets/PostProcessing/Runtime/PostProcessingBehaviour.cs
+Assets/PostProcessing/Runtime/PostProcessingComponent.cs
+Assets/PostProcessing/Runtime/PostProcessingContext.cs
+Assets/PostProcessing/Runtime/PostProcessingModel.cs
+Assets/PostProcessing/Runtime/PostProcessingProfile.cs
+Assets/PostProcessing/Runtime/Utils/ColorGradingCurve.cs
+Assets/PostProcessing/Runtime/Utils/GraphicsUtils.cs
+Assets/PostProcessing/Runtime/Utils/MaterialFactory.cs
+Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs
+Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleWheelController.cs
+"Assets/TextMesh Pro/Examples/Scripts/Benchmark01.cs"
+"Assets/TextMesh Pro/Examples/Scripts/Benchmark01_UGUI.cs"
+"Assets/TextMesh Pro/Examples/Scripts/Benchmark02.cs"
+"Assets/TextMesh Pro/Examples/Scripts/Benchmark03.cs"
+"Assets/TextMesh Pro/Examples/Scripts/Benchmark04.cs"
+"Assets/TextMesh Pro/Examples/Scripts/CameraController.cs"
+"Assets/TextMesh Pro/Examples/Scripts/ChatController.cs"
+"Assets/TextMesh Pro/Examples/Scripts/EnvMapAnimator.cs"
+"Assets/TextMesh Pro/Examples/Scripts/ObjectSpin.cs"
+"Assets/TextMesh Pro/Examples/Scripts/ShaderPropAnimator.cs"
+"Assets/TextMesh Pro/Examples/Scripts/SimpleScript.cs"
+"Assets/TextMesh Pro/Examples/Scripts/SkewTextExample.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TeleType.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TextConsoleSimulator.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TextMeshProFloatingText.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TextMeshSpawner.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_DigitValidator.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_ExampleScript_01.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_FrameRateCounter.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_TextEventCheck.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_TextEventHandler.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_TextInfoDebugTool.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_TextSelector_A.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_TextSelector_B.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMP_UiFrameRateCounter.cs"
+"Assets/TextMesh Pro/Examples/Scripts/TMPro_InstructionOverlay.cs"
+"Assets/TextMesh Pro/Examples/Scripts/VertexColorCycler.cs"
+"Assets/TextMesh Pro/Examples/Scripts/VertexJitter.cs"
+"Assets/TextMesh Pro/Examples/Scripts/VertexShakeA.cs"
+"Assets/TextMesh Pro/Examples/Scripts/VertexShakeB.cs"
+"Assets/TextMesh Pro/Examples/Scripts/VertexZoom.cs"
+"Assets/TextMesh Pro/Examples/Scripts/WarpTextExample.cs"
+-r:"D:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"D:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
+-r:"D:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
+-r:"D:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.Lang.dll"
+-r:"D:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity
