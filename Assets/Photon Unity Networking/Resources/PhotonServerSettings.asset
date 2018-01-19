@@ -41,4 +41,5 @@ MonoBehaviour:
   - mainGetHit
   - ShootSound
   - SetPlayerConsts
+  - ReloadTrigger
   DisableAutoOpenWizard: 1
