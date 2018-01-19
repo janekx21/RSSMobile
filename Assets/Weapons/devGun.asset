@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf9b3bdda230154e8d35edbcdf6564d, type: 3}
+  m_Name: devGun
+  m_EditorClassIdentifier: 
+  weaponName: Dev Weapon
+  damage: 2
+  maxMagazin: 30
+  maxAmunition: 300
+  fireRate: 600
+  model: {fileID: 1793469687414534, guid: ceb38b396faa3954aa410e270cee787c, type: 2}
+  shootSound: {fileID: 8300000, guid: 9ea748de7d7ec394bab16281ecc2f7c3, type: 3}
+  reloadSound: {fileID: 0}
+  id: 0
