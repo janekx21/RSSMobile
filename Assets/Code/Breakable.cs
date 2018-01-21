@@ -33,7 +33,7 @@ public class Breakable : Photon.PunBehaviour {
         hp -= damage;
         if(hp <= 0) {
             Break();
-            PhotonNetwork.RPC(photonView, "Break", PhotonTargets.OthersBuffered,false);
+            PhotonNetwork.RPC(photonView, "Break", PhotonTargets.OthersBuffered,false); 
         }
     }
 }
