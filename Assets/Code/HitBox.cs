@@ -5,6 +5,7 @@ using UnityEngine;
 public class HitBox : MonoBehaviour {
 
     public Player player;
+    public Breakable breakable;
 
 	// Use this for initialization
 	void Start () {
@@ -15,4 +16,5 @@ public class HitBox : MonoBehaviour {
 	void Update () {
 		
 	}
+
 }

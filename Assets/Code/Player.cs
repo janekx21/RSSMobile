@@ -237,10 +237,13 @@ public class Player : MonoBehaviour {
             HitBox hitbox = hit.collider.GetComponent<HitBox>();
             if (hitbox) {
                 Player other = hitbox.player;
+                Breakable breakable = hitbox.breakable;
                 if (other) {
                     print("you hit -|-");
                     ownAudio.PlayOneShot(hitmarker);
                     PhotonNetwork.RPC(other.photonView, "getHit", other.photonView.owner, false, damage,cam.transform.position);//1 is damage
+                }else if (breakable) {
+                    breakable.getHitLocal(damage);
                 }
             }
             else {

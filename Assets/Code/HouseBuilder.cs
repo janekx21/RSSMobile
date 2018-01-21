@@ -137,6 +137,11 @@ public class HouseBuilder : MonoBehaviour {
                 if (layout[i, j - 1] == 0) richtung = 1;
                 Vector3 rot = new Vector3(0, richtung * 90, 0);
                 Vector3 pos = new Vector3(i, 0, j) + transform.position;
+
+                if (layout[i, j] != 0) {
+                    Instantiate(walls[7], pos + new Vector3(0, 3, 0), Quaternion.identity, transform);
+                }
+
                 switch (layout[i, j]) {
                     case 3:
                     //walls[1].transform.rotation
