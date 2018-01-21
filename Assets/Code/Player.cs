@@ -100,6 +100,9 @@ public class Player : MonoBehaviour {
                 item.SetActive(false);
             }
             gunAudio.spatialBlend = 0f;
+            for (int i = 0; i < hitBoxes.Length; i++) {
+                hitBoxes[i].gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+            }
         }
         
         weaponConst = local.defaultWeapon;
@@ -239,7 +242,8 @@ public class Player : MonoBehaviour {
     void Shoot() {
         var r = new Ray(cam.transform.position, cam.transform.forward);
         RaycastHit hit = new RaycastHit();
-        if(Physics.Raycast(r, out hit,LayerMask.GetMask("HitBox"))) {
+        int layerMask = LayerMask.GetMask("HitBox","Map");
+        if(Physics.Raycast(r, out hit,1000f, layerMask)) {
 
             HitBox hitbox = hit.collider.GetComponent<HitBox>();
             if (hitbox) {

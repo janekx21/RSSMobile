@@ -127,7 +127,7 @@ public class HouseBuilder : MonoBehaviour {
     }
 
     void GenerateStrukture() {
-        print("im now generating");
+     //   print("im now generating");
         for (int i = 1; i < SIZE - 1; i++) {
             for (int j = 1; j < SIZE - 1; j++) {
                 int richtung = 0;
@@ -198,7 +198,7 @@ public class HouseBuilder : MonoBehaviour {
                     if (chValidotherBlock(layout[i, j + 1])) grichtung2 = 3;
                     if (chValidotherBlock(layout[i, j - 1])) grichtung2 = 1;
                     int r3 = grichtung2 - rrichtung;
-                    print(string.Format("{0},{1} r:{2}", i, j, grichtung2 - rrichtung));
+            //        print(string.Format("{0},{1} r:{2}", i, j, grichtung2 - rrichtung));
                     if (r3 == -3) r3 = 1;
                     if (r3 == 3) r3 = -1;
                     GameObject clone = null;
@@ -247,7 +247,7 @@ public class HouseBuilder : MonoBehaviour {
         }
         
         hasGenerated = true;
-        print("must generate now ---");
+     //   print("must generate now ---");
         GenerateStrukture();
     }
 

@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33273840553893040}
   - component: {fileID: 23580639705781042}
   - component: {fileID: 65059704348880420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: levelPlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}

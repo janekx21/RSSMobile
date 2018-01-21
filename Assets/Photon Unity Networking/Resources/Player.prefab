@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 4107893011559712}
   - component: {fileID: 136926428958588956}
   - component: {fileID: 114156498818041582}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: caplseBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 114595945226224006}
   - component: {fileID: 143936078707814350}
   - component: {fileID: 82154948368305286}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +649,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4207400308434974}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: hitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
