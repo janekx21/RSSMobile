@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Breakable : Photon.PunBehaviour {
+public class Breakable :  MonoBehaviour {
     public float maxHp = 3f;
-    float hp = 3f;
-	// Use this for initialization
-	void Start () {
+    public float hp = 3f;
+    public PhotonView photonView;
+    // Use this for initialization
+    private void Awake() {
+        photonView = GetComponent<PhotonView>();
+    }
+    void Start () {
         hp = maxHp;
     }
 
@@ -35,5 +39,6 @@ public class Breakable : Photon.PunBehaviour {
             Break();
             PhotonNetwork.RPC(photonView, "Break", PhotonTargets.OthersBuffered,false); 
         }
+        print("got hit");
     }
 }

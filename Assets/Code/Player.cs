@@ -198,9 +198,10 @@ public class Player : MonoBehaviour {
             
 
         }
-        playerAnimator.SetFloat("WalkingHorizontal", horizontalMovement);
-        playerAnimator.SetFloat("WalkingVertical", verticalMovement);
-        
+        if (!mine) {
+            playerAnimator.SetFloat("WalkingHorizontal", horizontalMovement);
+            playerAnimator.SetFloat("WalkingVertical", verticalMovement);
+        }
 
     }
 
@@ -257,7 +258,8 @@ public class Player : MonoBehaviour {
         PhotonNetwork.RPC(photonView, "ShootSound", PhotonTargets.Others, false);
         gunAnim.SetFloat("rate",1/( 60f / fireRate));
         gunAnim.Play("gunShoot");
-        playerAnimator.Play("Armature|shootArms", 1);
+        if(!mine)
+            playerAnimator.Play("Armature|shootArms", 1);
         lastShoot = 0f;
     }
 
@@ -266,8 +268,10 @@ public class Player : MonoBehaviour {
         if (amunition == 0) return;
         reloadTimer = weaponConst.reloadTime;
         isReloading = true;
+        
         gunAnim.Play("gunReload");
-        playerAnimator.Play("Armature|reloadArms", 1);
+        if (!mine)
+            playerAnimator.Play("Armature|reloadArms", 1);
         PhotonNetwork.RPC(photonView, "ReloadTrigger", PhotonTargets.Others, false);
     }
 
@@ -277,7 +281,6 @@ public class Player : MonoBehaviour {
     }
     void FinishedReloading() {
         int rest = amunition - weaponConst.maxMagazin + magazin;
-        print(rest);
         if(rest < weaponConst.maxMagazin) {
             if(rest >0)
                 magazin = Mathf.Abs(rest);

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23616933641838384}
   - component: {fileID: 114770151732117876}
   - component: {fileID: 114448901307736682}
+  - component: {fileID: 114688777579475234}
   m_Layer: 0
   m_Name: braikable
   m_TagString: Untagged
@@ -110,6 +111,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   breakable: {fileID: 114770151732117876}
+--- !u!114 &114688777579475234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1308657092790458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  OwnerShipWasTransfered: 0
+  prefixBackup: -1
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 114770151732117876}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  currentMasterID: -1
+  isRuntimeInstantiated: 0
 --- !u!114 &114770151732117876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,3 +149,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 3
+  hp: 3
+  photonView: {fileID: 0}
