@@ -1567,7 +1567,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0.723
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1718,8 +1718,8 @@ MonoBehaviour:
   - {fileID: 114595945226224006}
   - {fileID: 114714993000703636}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 0
-  instantiationId: -1
+  viewIdField: 7
+  instantiationId: 7
   currentMasterID: -1
   isRuntimeInstantiated: 0
 --- !u!114 &114121897429282424
@@ -1744,8 +1744,8 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: 114557421615735510}
   ObservedComponentsFoldoutOpen: 1
-  viewIdField: 0
-  instantiationId: -1
+  viewIdField: 8
+  instantiationId: 8
   currentMasterID: -1
   isRuntimeInstantiated: 0
 --- !u!114 &114156498818041582
@@ -1760,6 +1760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  breakable: {fileID: 0}
 --- !u!114 &114557421615735510
 MonoBehaviour:
   m_ObjectHideFlags: 1

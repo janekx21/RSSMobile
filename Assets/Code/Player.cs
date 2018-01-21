@@ -96,7 +96,7 @@ public class Player : MonoBehaviour {
             foreach (var item in outsideRepr) {
                 item.SetActive(false);
             }
-            
+            gunAudio.spatialBlend = 0f;
         }
         
         weaponConst = local.defaultWeapon;
