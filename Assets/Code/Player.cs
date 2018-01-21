@@ -243,7 +243,7 @@ public class Player : MonoBehaviour {
                     ownAudio.PlayOneShot(hitmarker);
                     PhotonNetwork.RPC(other.photonView, "getHit", other.photonView.owner, false, damage,cam.transform.position);//1 is damage
                 }else if (breakable) {
-                    breakable.getHitLocal(damage);
+                    PhotonNetwork.RPC(breakable.photonView, "getHit", PhotonTargets.MasterClient, false, damage);
                 }
             }
             else {

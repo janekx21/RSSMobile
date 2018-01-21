@@ -28,8 +28,8 @@ public class Breakable : Photon.PunBehaviour {
     public void Break() {
         Destroy(gameObject);
     }
-
-    public void getHitLocal(float damage) {
+    [PunRPC]
+    public void getHit(float damage) {
         hp -= damage;
         if(hp <= 0) {
             Break();
