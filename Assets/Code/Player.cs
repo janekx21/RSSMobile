@@ -46,6 +46,8 @@ public class Player : MonoBehaviour {
     bool isReloading = false;
     public int magazin = 0;
     public int amunition = 0;
+
+    public float lean;
     
 
     public float movementSpeed = 1;
@@ -61,6 +63,7 @@ public class Player : MonoBehaviour {
     float horizontalMovement = 0;
     float verticalMovement = 0;
     public GameObject[] outsideRepr;
+    public Transform LeanTransform;
 
     public bool mine = false;
     public bool dev;
@@ -112,6 +115,7 @@ public class Player : MonoBehaviour {
             stream.SendNext(System.Array.IndexOf(Manager.instance.allWeapons, weaponConst));
             stream.SendNext(verticalMovement);
             stream.SendNext(horizontalMovement);
+            stream.SendNext(lean);
         }
         else {
            hp = (float)stream.ReceiveNext();
@@ -119,6 +123,7 @@ public class Player : MonoBehaviour {
             weaponConst = (WeaponConst)Manager.instance.allWeapons[(int)stream.ReceiveNext()];
             verticalMovement = Mathf.Lerp(verticalMovement,(float)stream.ReceiveNext(),.5f);
             horizontalMovement = Mathf.Lerp(horizontalMovement,(float)stream.ReceiveNext(),.5f);
+            lean = (float)stream.ReceiveNext();
         }
     }
 
@@ -160,7 +165,7 @@ public class Player : MonoBehaviour {
                     Reload();
             }
 
-            
+            lean = Input.GetAxis("Lean");
 
             var zmov = Vector3.zero;
             zmov.x = Input.GetAxis("Horizontal");
@@ -202,6 +207,7 @@ public class Player : MonoBehaviour {
             playerAnimator.SetFloat("WalkingHorizontal", horizontalMovement);
             playerAnimator.SetFloat("WalkingVertical", verticalMovement);
         }
+        LeanTransform.localRotation = Quaternion.Euler(0, 0, lean*45);
 
     }
 
