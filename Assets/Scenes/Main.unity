@@ -4592,22 +4592,22 @@ Prefab:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114016701682489430, guid: 47d3d4b6bd1cc654f8719e47a3b5fba7,
+    - target: {fileID: 114121897429282424, guid: 47d3d4b6bd1cc654f8719e47a3b5fba7,
         type: 2}
       propertyPath: viewIdField
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114016701682489430, guid: 47d3d4b6bd1cc654f8719e47a3b5fba7,
+    - target: {fileID: 114121897429282424, guid: 47d3d4b6bd1cc654f8719e47a3b5fba7,
         type: 2}
       propertyPath: instantiationId
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114121897429282424, guid: 47d3d4b6bd1cc654f8719e47a3b5fba7,
+    - target: {fileID: 114016701682489430, guid: 47d3d4b6bd1cc654f8719e47a3b5fba7,
         type: 2}
       propertyPath: viewIdField
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114121897429282424, guid: 47d3d4b6bd1cc654f8719e47a3b5fba7,
+    - target: {fileID: 114016701682489430, guid: 47d3d4b6bd1cc654f8719e47a3b5fba7,
         type: 2}
       propertyPath: instantiationId
       value: 8

@@ -15,10 +15,13 @@ public class ActivityCam : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Manager.instance.activCam == cam) {
+            cam.tag = "MainCamera";
             listener.enabled = true;
             cam.enabled = true;
+            
         }
         else {
+            cam.tag = "Untagged";
             listener.enabled = false;
             cam.enabled = false;
         }
