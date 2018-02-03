@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: all
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Weapon
+    m_Weight: 1
+  - m_Path: Weapon/gun
+    m_Weight: 1
+  - m_Path: Weapon/gun/barrel
+    m_Weight: 1
+  - m_Path: Weapon/gun/barrel/barrel_end
+    m_Weight: 1
+  - m_Path: Weapon/gun/ironsight
+    m_Weight: 1
+  - m_Path: Weapon/gun/ironsight/ironsight_end
+    m_Weight: 1
+  - m_Path: Weapon/gun/lever
+    m_Weight: 1
+  - m_Path: Weapon/gun/lever/lever_end
+    m_Weight: 1
+  - m_Path: Weapon/gun/mag
+    m_Weight: 1
+  - m_Path: Weapon/gun/mag/mag_end
+    m_Weight: 1
+  - m_Path: Weapon/gun/mount
+    m_Weight: 1
+  - m_Path: Weapon/gun/mount/mount_end
+    m_Weight: 1
+  - m_Path: Weapon/gun/stock
+    m_Weight: 1
+  - m_Path: Weapon/gun/stock/stock_end
+    m_Weight: 1
+  - m_Path: Weapon/gun/trigger
+    m_Weight: 1
+  - m_Path: Weapon/gun/trigger/trigger_end
+    m_Weight: 1
+  - m_Path: WeaponModel
+    m_Weight: 1

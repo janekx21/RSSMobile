@@ -1,41 +1,61 @@
 fileFormatVersion: 2
-guid: 7098d1183223a82409564fc4c018cf9c
-timeCreated: 1514667052
+guid: a049e7dd405f97a4a8bd5152b6da1b63
+timeCreated: 1517700393
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Armature
-    100002: barrel
-    100004: barrel_end
-    100006: Cube
+    100000: frontGrip
+    100002: grip
+    100004: gun
+    100006: lever
     100008: //RootNode
-    100010: gun
-    100012: gun_end
-    100014: mag
-    100016: mag_end
-    100018: stock
-    100020: stock_end
-    400000: Armature
-    400002: barrel
-    400004: barrel_end
-    400006: Cube
+    100010: mag
+    100012: sights
+    100014: stok
+    100016: trigger
+    100018: Weapon
+    100020: WeaponObject
+    400000: frontGrip
+    400002: grip
+    400004: gun
+    400006: lever
     400008: //RootNode
-    400010: gun
-    400012: gun_end
-    400014: mag
-    400016: mag_end
-    400018: stock
-    400020: stock_end
-    4300000: Cube
+    400010: mag
+    400012: sights
+    400014: stok
+    400016: trigger
+    400018: Weapon
+    400020: WeaponObject
+    4300000: WeaponObject
+    7400000: Default Take
+    7400002: idl
+    7400004: none
+    7400006: reload
+    7400008: shoot
     9500000: //RootNode
-    13700000: Cube
+    13700000: WeaponObject
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 8a9c47a424b3cdd4b8b1b2eabd1ab98e, type: 2}
+      name: Black
+    second: {fileID: 2100000, guid: 585dacf185d75c246b5fc94b87b2211a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GunMeatl
+    second: {fileID: 2100000, guid: 30ce51befd0d1dc47ad062d8d330c10a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 1c2eab8fd2216ba498d56ec9a5119365, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalDark
+    second: {fileID: 2100000, guid: 36bb9ceab0a045145a17ffbc88b52e01, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

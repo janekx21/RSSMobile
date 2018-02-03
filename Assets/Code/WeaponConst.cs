@@ -9,7 +9,10 @@ public class WeaponConst : ScriptableObject {
     public int maxMagazin =30;
     public int maxAmunition = 300;
     public float fireRate = 300;
+    public float spreadHip = 3f;
+    public float spreadAim = .5f;
     public float reloadTime = 3f;
+    public float adsTime = .3f;
     public GameObject model;
     public AudioClip shootSound;
     public AudioClip reloadSound;

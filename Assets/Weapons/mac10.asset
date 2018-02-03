@@ -15,8 +15,13 @@ MonoBehaviour:
   damage: 0.8
   maxMagazin: 30
   maxAmunition: 360
-  fireRate: 1200
+  fireRate: 1050
+  spreadHip: 3
+  spreadAim: 0.5
+  reloadTime: 3
+  adsTime: 0.3
   model: {fileID: 1301115725092704, guid: 1f7a1df10a75a5e4db6bdeeb66c60f79, type: 2}
   shootSound: {fileID: 8300000, guid: c374054ed8f40c34d84fbb7444c87aa7, type: 3}
   reloadSound: {fileID: 0}
+  weaponSideView: {fileID: 0}
   id: 2

@@ -1,34 +1,85 @@
 fileFormatVersion: 2
-guid: 1356bf135898e8341af96d1c7a30350d
-timeCreated: 1514727266
+guid: 1c1fd66029f4c22409aa6eec671bf21f
+timeCreated: 1514910470
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Armature
-    100002: barrel
-    100004: Cube
-    100006: //RootNode
-    100008: gun
-    100010: mag
-    100012: stock
-    400000: Armature
-    400002: barrel
-    400004: Cube
-    400006: //RootNode
-    400008: gun
-    400010: mag
-    400012: stock
-    4300000: Cube
-    7400000: Default Take
+    100000: //RootNode
+    100002: frontGrip
+    100004: frontGrip_end
+    100006: grip
+    100008: grip_end
+    100010: gun
+    100012: lever
+    100014: lever_end
+    100016: mag
+    100018: mag_end
+    100020: sights
+    100022: sights_end
+    100024: stok
+    100026: stok_end
+    100028: trigger
+    100030: trigger_end
+    100032: Weapon
+    100034: WeaponObject
+    400000: //RootNode
+    400002: frontGrip
+    400004: frontGrip_end
+    400006: grip
+    400008: grip_end
+    400010: gun
+    400012: lever
+    400014: lever_end
+    400016: mag
+    400018: mag_end
+    400020: sights
+    400022: sights_end
+    400024: stok
+    400026: stok_end
+    400028: trigger
+    400030: trigger_end
+    400032: Weapon
+    400034: WeaponObject
+    2300000: //RootNode
+    2300002: WeaponObject
+    3300000: //RootNode
+    3300002: WeaponObject
+    4300000: Cube.001
+    4300002: WeaponObject
+    7400000: Weapon|idl
+    7400002: Weapon|none
+    7400004: Weapon|reload
+    7400006: Weapon|shoot
     9500000: //RootNode
-    13700000: Cube
+    11100000: //RootNode
+    13700000: WeaponObject
   externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: c6135f07fd8917544a5755e4ab865c9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GunMeatl
+    second: {fileID: 2100000, guid: 1dc7d58de3c547f43b6c9628c060857d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
     second: {fileID: 2100000, guid: 8a9c47a424b3cdd4b8b1b2eabd1ab98e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 8d878aa97916db4439bcf71c6bd2c47d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalDark
+    second: {fileID: 2100000, guid: 89a377a7295f1bf46ac49db348b401ee, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -47,7 +98,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -97,7 +148,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2

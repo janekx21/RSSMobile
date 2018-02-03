@@ -1,21 +1,61 @@
 fileFormatVersion: 2
-guid: 1c1fd66029f4c22409aa6eec671bf21f
-timeCreated: 1514910470
+guid: 2fd2af92905911b4a86f115825e77e42
+timeCreated: 1517693665
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cube.001
+    100000: barrel
+    100002: //RootNode
+    100004: gun
+    100006: ironsight
+    100008: lever
+    100010: mag
+    100012: mount
+    100014: stock
+    100016: trigger
+    100018: Weapon
+    100020: WeaponModel
+    400000: barrel
+    400002: //RootNode
+    400004: gun
+    400006: ironsight
+    400008: lever
+    400010: mag
+    400012: mount
+    400014: stock
+    400016: trigger
+    400018: Weapon
+    400020: WeaponModel
+    4300000: WeaponModel
+    7400000: Default Take
+    7400002: idl
+    7400004: none
+    7400006: reload
+    7400008: shoot
+    9500000: //RootNode
+    13700000: WeaponModel
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 8a9c47a424b3cdd4b8b1b2eabd1ab98e, type: 2}
+      name: Gun_Metall
+    second: {fileID: 2100000, guid: 03fa23c0b8167464da3ed752679439cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gun_Metall_Dark
+    second: {fileID: 2100000, guid: b6f9c651b02989d42b3578dfd0676f8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lether
+    second: {fileID: 2100000, guid: c27dd1472915a024692b20f29036d379, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_Stuff
+    second: {fileID: 2100000, guid: eeeadbd42c9b04c46af0b77ac385cd73, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -87,7 +127,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

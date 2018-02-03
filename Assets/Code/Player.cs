@@ -11,6 +11,7 @@ public class Player : MonoBehaviour {
 
     public Animator gunAnim;
     public AudioSource gunAudio;
+    public GameObject gunObject;
     public HitBox[] hitBoxes;
     public GameObject gunPoint;
     AudioSource ownAudio;
@@ -28,7 +29,13 @@ public class Player : MonoBehaviour {
             
 
             var clone = Instantiate(_weaponConst.model, Vector3.zero, Quaternion.identity, gunPoint.transform);
-            gunAnim = clone.GetComponent<Animator>();   
+            WeaponInfo info = clone.GetComponent<WeaponInfo>();
+            gunAnim = info.gunAnimator;
+            var v = -info.ironSight.position;
+            v -= gunPoint.transform.localPosition;
+            v.z = 0;
+            zoomTarget = v;
+
             clone.transform.localPosition = Vector3.zero;
             clone.transform.localRotation = Quaternion.identity;
 
@@ -36,6 +43,8 @@ public class Player : MonoBehaviour {
             damage = _weaponConst.damage;
             amunition = _weaponConst.maxAmunition;
             magazin = _weaponConst.maxMagazin;
+
+            gunObject = clone;
         }
     }
     float fireRate = 300; //RPM
@@ -48,6 +57,11 @@ public class Player : MonoBehaviour {
     public int amunition = 0;
 
     public float lean;
+    public float zoom;
+    public bool ads;
+    public Vector3 zoomTarget;
+
+    public AnimationCurve aimCurve;
     
 
     public float movementSpeed = 1;
@@ -119,6 +133,7 @@ public class Player : MonoBehaviour {
             stream.SendNext(verticalMovement);
             stream.SendNext(horizontalMovement);
             stream.SendNext(lean);
+            stream.SendNext(zoom);
         }
         else {
            hp = (float)stream.ReceiveNext();
@@ -127,6 +142,7 @@ public class Player : MonoBehaviour {
             verticalMovement = Mathf.Lerp(verticalMovement,(float)stream.ReceiveNext(),.5f);
             horizontalMovement = Mathf.Lerp(horizontalMovement,(float)stream.ReceiveNext(),.5f);
             lean = (float)stream.ReceiveNext();
+            zoom = (float)stream.ReceiveNext();
         }
     }
 
@@ -144,6 +160,20 @@ public class Player : MonoBehaviour {
             }
             if (Input.GetKeyDown(KeyCode.Escape)) {
                 Cursor.lockState = CursorLockMode.None;
+            }
+
+            if (Input.GetButton("Aim")) {
+                ads = true;
+            }
+            else {
+                ads = false;
+            }
+
+            if (ads) {
+                zoom = Mathf.MoveTowards(zoom, 1f, Time.deltaTime/weaponConst.adsTime);
+            }
+            else {
+                zoom = Mathf.MoveTowards(zoom, 0f, Time.deltaTime / weaponConst.adsTime);
             }
             
 
@@ -197,20 +227,22 @@ public class Player : MonoBehaviour {
             if(isReloading) {
                 reloadTimer -= Time.deltaTime;
             }
-            if(reloadTimer < 0 && isReloading) {
+            if (reloadTimer < 0 && isReloading) {
                 isReloading = false;
                 reloadTimer = 0;
                 FinishedReloading();
             }
-
-            
+            //gunAnim.SetFloat("zoom", aimCurve.Evaluate(zoom));  //legacy
+            gunObject.transform.localPosition = Vector3.Lerp(Vector3.zero, zoomTarget, aimCurve.Evaluate(zoom));
+            gunAnim.SetLayerWeight(1, 1 - zoom + .1f);
 
         }
         if (!mine) {
             playerAnimator.SetFloat("WalkingHorizontal", horizontalMovement);
             playerAnimator.SetFloat("WalkingVertical", verticalMovement);
+            //playerAnimator.SetFloat("zoom", aimCurve.Evaluate(zoom));
         }
-        LeanTransform.localRotation = Quaternion.Euler(0, 0, lean*45);
+        LeanTransform.localRotation = Quaternion.Euler(0, 0, lean*25);
 
     }
 
@@ -240,7 +272,17 @@ public class Player : MonoBehaviour {
 
 
     void Shoot() {
-        var r = new Ray(cam.transform.position, cam.transform.forward);
+        Vector3 direction = cam.transform.forward;
+
+        var difference = Mathf.Lerp(weaponConst.spreadHip, weaponConst.spreadAim, zoom);
+
+        Vector3 rndCircle = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+        rndCircle = Vector3.ClampMagnitude(rndCircle, 1f)*difference;
+        Quaternion abb = Quaternion.Euler(rndCircle);
+
+        direction = abb * direction;
+
+        var r = new Ray(cam.transform.position, direction);
         RaycastHit hit = new RaycastHit();
         int layerMask = LayerMask.GetMask("HitBox","Map");
         if(Physics.Raycast(r, out hit,1000f, layerMask)) {
